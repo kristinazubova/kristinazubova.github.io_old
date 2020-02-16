@@ -1,0 +1,157 @@
+* {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+
+._relative {
+  position: relative;
+}
+
+._shadow {
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+._shadow:hover {
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.36);
+}
+
+/* Layout */
+.layout-center {
+  margin: 0 10%;
+}
+
+/* Header's style */
+.header {
+  overflow: hidden;
+  background-color: #ad181e;
+  color: white;
+}
+
+.header__background-text {
+  position: absolute;
+  font-size: 45rem;
+  font-weight: bold;
+  color: #800000;
+  opacity: 0.5;
+  left: -7rem;
+  top: -3rem;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-menu {
+  height: 10rem;
+}
+
+.menu-items {
+  text-align: right;
+  list-style-type: none;
+  padding: 0px;
+  margin-right: 1rem;
+}
+
+.menu-item {
+  display: inline-block;
+  margin-right: 5px;
+  white-space: nowrap;
+  padding: 8px 10px;
+}
+
+.menu-item.highlighted {
+  padding: 10px;
+  border: 2px solid #ffb629;
+  border-radius: 2rem;
+}
+
+.header-text {
+  font-size: 5rem;
+  padding-bottom: 6rem;
+  margin: 0px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(53, 54, 55)
+}
+
+/* Services */
+.content__services {
+  width: 40%;
+}
+
+.services__title {
+  font-size: 2rem;
+  margin: 3rem 0;
+}
+
+/* Submit form */
+.submit-form {
+  width: 22rem;
+  height: 26rem;
+  padding: 1rem;
+  margin-top: -7rem;
+  border-radius: 0.2rem;
+  z-index: 10;
+  text-align: left;
+  background-color: #ffb629;
+}
+
+.submit-form__item {
+  border: none;
+  border-bottom: 1px solid #696969;
+  width: 20rem;
+  height: 2rem;
+  background: none;
+  margin: 1rem;
+}
+
+.submit-form__feedback {
+  text-align: center;
+  font-weight: 700;
+}
+
+.feedback__title {
+  font-size: 1.5rem;
+}
+
+.feedback__content {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+}
+
+/* Key services*/
+.key-service {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.key-service-item {
+  display: flex;
+  align-items: center;
+  width: 45%;
+}
+
+.key-service-item .material-icons {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  bottom: 0rem;
+  vertical-align: bottom;
+  min-height: 4rem;
+  background-color: #ad181e;
+}

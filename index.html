@@ -3,8 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>One web agency</title>
-  <meta name="description" content="Описание страницы" />
+  <title>One web agency - digital-агенство</title>
+  <meta charset="utf-8">
+  <meta name="description" content="OneWeb - digital transformation agency. Наши ключевые сервисы: разработка мобильных и web-приложений, 
+  адаптивная верстка, разработка и создание сайтов, проектирование интерфейсов.">
+  <meta name="keywords" content="сайт, создание сайтов, web-site, верстка, приложение, автоматизация">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -27,12 +30,12 @@
           </g>
         </svg>
         <ul class="menu-items">
-          <li class="menu-item">Сервисы</li>
-          <li class="menu-item">Портфолио</li>
+          <li class="menu-item"><a href="#key-service">Сервисы</a></li>
+          <li class="menu-item"><a href="#portfolio">Портфолио</a></li>
           <li class="menu-item">Кейсы</li>
-          <li class="menu-item">О нас</li>
+          <li class="menu-item"><a href="#about">О нас</a></li>
           <li class="menu-item">Работа</li>
-          <li class="menu-item highlighted">Контакты</li>
+          <li class="menu-item highlighted"><a href="#contacts">Контакты</a></li>
         </ul>
       </nav>
       <h1 class="header-text">
@@ -41,33 +44,69 @@
     </div>
   </header>
   <main class="content layout-center">
-    <section class="content__services">
-      <h2 class="services__title">Ключевые сервисы</h2>
-      <div class="key-service">
-        <div class="key-service-item">
-          <i class="material-icons">
-            devices
-          </i>
-          Адаптивная верстка
+    <div class="content__flex">
+
+      <section class="content__services">
+        <h2 class="services__title" id="key-service">Ключевые сервисы</h2>
+        <div class="key-service">
+          <div class="key-service-item">
+            <i class="material-icons">
+              devices
+            </i>
+            Адаптивная верстка
+          </div>
+          <div class="key-service-item">
+            <i class="material-icons">
+              settings
+            </i>
+            Разработка проекта
+          </div>
         </div>
-        <div class="key-service-item">
-          <i class="material-icons">
-            settings
-          </i>
-          Разработка проекта
+      </section>
+
+      <aside class="submit-form _shadow">
+        <div class="submit-form__feedback">
+          <h2 class="feedback__title">Начнем ваш проект!</h2>
+          <p class="feedback__content">Мы ответим в течение 2 часов!</p>
         </div>
+        <input type="name" class="submit-form__name submit-form__item" id="name" placeholder="ФИО">
+        <input type="email" class="submit-form__email submit-form__item" id="email" placeholder="Email">
+        <input type="tel" class="submit-form__phone-number submit-form__item" placeholder="Номер телефона" id="phoneNumber" pattern="+7-[0-9]{3}-[0-9]{7}">
+      </aside>
       </div>
-    </section>
-    <aside class="submit-form _shadow">
-      <div class="submit-form__feedback">
-        <h2 class="feedback__title">Начнем ваш проект!</h2>
-        <p class="feedback__content">Мы ответим в течение 2 часов!</p>
-      </div>
-      <input type="name" class="submit-form__name submit-form__item" id="name" placeholder="ФИО">
-      <input type="email" class="submit-form__email submit-form__item" id="email" placeholder="Email">
-      <input type="number" class="submit-form__phone-number submit-form__item" value="Номер телефона" id="phoneNumber"
-        placeholder="Номер телефона">
-    </aside>
+
+      <div class="content__portfolio" id="portfolio">
+        <h2 class="content__portfolio_title">Портфолио</h2>
+        <div class="content__portfolio-box">
+          <div class="content__portfolio-box-item">
+            <img src="#">
+            <p>Project 1</p>
+            <p>First project's description</p>
+          </div>
+          <div class="content__portfolio-box-item">
+            <img src="#">
+            <p>Project 2</p>
+            <p>Second project's description</p>
+          </div>
+          <div class="content__portfolio-box-item">
+            <img src="#">
+            <p>Project 3</p>
+            <p>Third project's description</p>
+          </div>
+        </div>
+
+        <div class="content__about-us" id="about">
+          <h2 class="content__about-us_title">О нас</h2>
+          <p>text text text</p>
+        </div>
+
+        <div class="content__contacts" id="contacts">
+          <h2 class="content__about-us_title">Контакты</h2>
+          <div class="content__about-us_contact-info">
+          <p>tel: +7-777-777-77-77 <br>
+          e-mail: onewebagency@email.com</p>
+        </div>
+        </div>
   </main>
   <footer class="footer">
     Подвал

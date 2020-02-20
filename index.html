@@ -12,7 +12,6 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="icon" href="#">
-  <script type="text/javascript" src="#"></script>
 </head>
 
 <body>
@@ -36,6 +35,11 @@
           <li class="menu-item"><a href="#about">О нас</a></li>
           <li class="menu-item">Работа</li>
           <li class="menu-item highlighted"><a href="#contacts">Контакты</a></li>
+          <li class="menu-item menu-icon">
+            <i class="material-icons">
+              menu
+            </i>
+          </li>
         </ul>
       </nav>
       <h1 class="header-text">
@@ -60,6 +64,18 @@
               settings
             </i>
             Разработка проекта
+          </div>
+          <div class="key-service-item">
+            <i class="material-icons">
+              emoji_objects
+            </i>
+            Автоматизация бизнес-процессов
+          </div>
+          <div class="key-service-item">
+            <i class="material-icons">
+              emoji_objects
+            </i>
+            Разработка приложений
           </div>
         </div>
       </section>
@@ -102,14 +118,21 @@
         </div>
       </div>
 
-      <div class="content__about-us" id="about">
+      <div id="about" class="content__about-us">
         <h2 class="content__about-us_title">О нас</h2>
-        <p>text text text</p>
+        <p>
+          Мы разрабатываем продукты и digital-экосистемы, 
+          создаем крутые веб-приложения, вдохновляющий UX-дизайн, 
+          осуществляем комплексную поддержку в режиме 24/7, 
+          разрабатываем стратегии (консалтинг в digital), 
+          проводим исследования и аудиты, ищем инсайты и занимаемся data-science.
+        </p>
       </div>
 
-      <div class="content__contacts" id="contacts">
+      <div id="contacts" class="content__contacts">
         <h2 class="content__about-us_title">Контакты</h2>
-        <div class="content__about-us_contact-info">
+        <!--<div class="content__about-us_contact-info">-->
+        <div class="_shadow">
           <p><i class="material-icons" style="vertical-align:middle;">call</i>
             +7-777-777-77-77 </p>
           <p><i class="material-icons" style="vertical-align:middle;"> alternate_email</i>
@@ -133,5 +156,5 @@
     </div>
   </footer>
 </body>
-
+<script type="text/javascript" src="js/index.js"></script>
 </html>

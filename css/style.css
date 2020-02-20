@@ -127,7 +127,7 @@ a:hover {
   width: 20rem;
   height: 2rem;
   background: none;
-  margin: 1rem;
+  margin: 0.8rem;
 }
 
 .submit-form__feedback {
@@ -135,8 +135,22 @@ a:hover {
   font-weight: 700;
 }
 
+.submit-form__submit {
+  padding: 10px;
+  background-color: #ffb629;
+  border: 1px solid #696969;
+  box-shadow: 0px 0px 3px 0px #696969;
+  margin: 1rem;
+}
+
+.submit-form__icon {
+  font-size: 3.5rem;
+  margin-top: 1rem;
+}
+
 .feedback__title {
   font-size: 1.5rem;
+  margin-top: 0;
 }
 
 .feedback__content {
@@ -187,6 +201,7 @@ a:hover {
   vertical-align: middle;
   text-align: center;
 }
+
 /*About us*/
 
 .content__about-us {
@@ -216,4 +231,17 @@ a:hover {
   vertical-align: bottom;
   min-height: 4rem;
   background-color: #ad181e;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copyright {
+  font-size: 1rem;
+  color: white;
+  margin: 1rem;
+  font-weight: 100;
 }

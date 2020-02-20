@@ -66,50 +66,71 @@
 
       <aside class="submit-form _shadow">
         <div class="submit-form__feedback">
+          <i class="material-icons submit-form__icon">
+            laptop_mac
+          </i>
           <h2 class="feedback__title">Начнем ваш проект!</h2>
           <p class="feedback__content">Мы ответим в течение 2 часов!</p>
         </div>
         <input type="name" class="submit-form__name submit-form__item" id="name" placeholder="ФИО">
         <input type="email" class="submit-form__email submit-form__item" id="email" placeholder="Email">
-        <input type="tel" class="submit-form__phone-number submit-form__item" placeholder="Номер телефона" id="phoneNumber" pattern="+7-[0-9]{3}-[0-9]{7}">
+        <input type="tel" class="submit-form__phone-number submit-form__item" placeholder="Номер телефона"
+          id="phoneNumber" pattern="+7-[0-9]{3}-[0-9]{7}">
+        <div class="submit-form__feedback">
+          <input type="submit" class="submit-form__submit" value="Отправить">
+        </div>
       </aside>
+    </div>
+
+    <div class="content__portfolio" id="portfolio">
+      <h2 class="content__portfolio_title">Портфолио</h2>
+      <div class="content__portfolio-box">
+        <div class="content__portfolio-box-item">
+          <img src="#">
+          <p>Project 1</p>
+          <p>First project's description</p>
+        </div>
+        <div class="content__portfolio-box-item">
+          <img src="#">
+          <p>Project 2</p>
+          <p>Second project's description</p>
+        </div>
+        <div class="content__portfolio-box-item">
+          <img src="#">
+          <p>Project 3</p>
+          <p>Third project's description</p>
+        </div>
       </div>
 
-      <div class="content__portfolio" id="portfolio">
-        <h2 class="content__portfolio_title">Портфолио</h2>
-        <div class="content__portfolio-box">
-          <div class="content__portfolio-box-item">
-            <img src="#">
-            <p>Project 1</p>
-            <p>First project's description</p>
-          </div>
-          <div class="content__portfolio-box-item">
-            <img src="#">
-            <p>Project 2</p>
-            <p>Second project's description</p>
-          </div>
-          <div class="content__portfolio-box-item">
-            <img src="#">
-            <p>Project 3</p>
-            <p>Third project's description</p>
-          </div>
-        </div>
+      <div class="content__about-us" id="about">
+        <h2 class="content__about-us_title">О нас</h2>
+        <p>text text text</p>
+      </div>
 
-        <div class="content__about-us" id="about">
-          <h2 class="content__about-us_title">О нас</h2>
-          <p>text text text</p>
+      <div class="content__contacts" id="contacts">
+        <h2 class="content__about-us_title">Контакты</h2>
+        <div class="content__about-us_contact-info">
+          <p><i class="material-icons" style="vertical-align:middle;">call</i>
+            +7-777-777-77-77 </p>
+          <p><i class="material-icons" style="vertical-align:middle;"> alternate_email</i>
+            onewebagency@email.com</p>
         </div>
-
-        <div class="content__contacts" id="contacts">
-          <h2 class="content__about-us_title">Контакты</h2>
-          <div class="content__about-us_contact-info">
-          <p>tel: +7-777-777-77-77 <br>
-          e-mail: onewebagency@email.com</p>
-        </div>
-        </div>
+      </div>
   </main>
   <footer class="footer">
-    Подвал
+    <div class="footer__content layout-center">
+      <svg class="footer-logo" width="150" height="100" viewBox="0 0 300 150">
+        <g>
+          <circle r="25" cx="15%" cy="48%" fill="white" />
+          <text x="24%" y="60%" fill="white" font-size="72" font-weight="bold">ne</text>
+          <rect x="4%" y="25%" width="150" height="70" rx="40" ry="40" fill="none" stroke="white" stroke-width="5" />
+          <text x="58%" y="60%" fill="white" font-size="70" font-weight="bold">web</text>
+          <text x="60%" y="80%" fill="white" font-size="35" font-weight="normal">agency</text>
+        </g>
+      </svg>
+      <p class="footer__copyright"><i class="material-icons" style="vertical-align: middle;">copyright</i> 2020, "One
+        Web agency"</p>
+    </div>
   </footer>
 </body>
 

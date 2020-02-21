@@ -79,7 +79,6 @@ a:hover {
 
 .menu-item {
   display: inline-block;
-  margin-right: 5px;
   white-space: nowrap;
   padding: 8px 10px;
 }
@@ -128,7 +127,6 @@ a:hover {
 
 .submit-form {
   width: 22rem;
-  height: 26rem;
   padding: 1rem;
   margin-top: -7rem;
   border-radius: 0.2rem;
@@ -140,10 +138,10 @@ a:hover {
 .submit-form__item {
   border: none;
   border-bottom: 1px solid #696969;
-  width: 20rem;
-  height: 2rem;
+  width: 90%;
+  line-height: 2rem;
   background: none;
-  margin: 0.8rem;
+  margin: 5%;
 }
 
 .submit-form__feedback {
@@ -152,11 +150,12 @@ a:hover {
 }
 
 .submit-form__submit {
-  padding: 10px;
-  background-color: #ffb629;
-  border: 1px solid #696969;
-  box-shadow: 0px 0px 3px 0px #696969;
-  margin: 1rem;
+  padding: 1rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(53, 54, 55)
 }
 
 .submit-form__icon {
@@ -165,13 +164,14 @@ a:hover {
 }
 
 .feedback__title {
-  font-size: 1.5rem;
+  font-size: 1.5em;
+  /*margin: 0px;*/
   margin-top: 0;
 }
 
 .feedback__content {
   text-transform: uppercase;
-  font-size: 0.6rem;
+  font-size: 0.6em;
 }
 
 /* Key services*/
@@ -298,7 +298,7 @@ a:hover {
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     height: 100%;
     width: 100%;
     text-align: center;
@@ -314,10 +314,12 @@ a:hover {
   }
 
   .menu-icon {
-    height: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     text-align: right;
     background-color: unset;
-    display: block;
+    height: 150px;
   }
 
   .menu-icon .material-icons {
@@ -326,14 +328,26 @@ a:hover {
 
   .content__flex {
     flex-direction: column;
+    flex-flow: column-reverse;
   }
 
   .content__services {
-    width: 90%;
+    width: 100%;
   }
 
   .submit-form {
-    width: 95%;
+    width: calc(100% - 2rem);
+    margin-top: -2rem;
+  }
+
+  .submit-form__item {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+
+  .submit-form__feedback {
+    font-size: 2rem;
+    line-height: 4rem;
   }
 }
 

@@ -1,10 +1,9 @@
-document.querySelector('.menu-icon').onclick = function(event) {
-  var menuItemsElem = this.parentElement
+/**
+ * Import scss files
+ */
+import './../css/style.scss'
 
-  if (menuItemsElem.classList.contains('menu_clicked')) {
-    menuItemsElem.classList.remove('menu_clicked')
-  }
-  else {
-    menuItemsElem.classList.add('menu_clicked')
-  }
-}
+/**
+ * Import js files
+ */
+import './main'

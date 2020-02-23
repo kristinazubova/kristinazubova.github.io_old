@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>One web agency - digital-агенство</title>
-  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta name="description" content="OneWeb - digital transformation agency. Наши ключевые сервисы: разработка мобильных и web-приложений, 
   адаптивная верстка, разработка и создание сайтов, проектирование интерфейсов.">
   <meta name="keywords" content="сайт, создание сайтов, web-site, верстка, приложение, автоматизация">
@@ -18,7 +18,7 @@
     <div class="header__background-text">OneWeb</div>
     <div class="layout-center _relative">
       <nav class="menu header-menu">
-        <svg class="header-logo" width="150" height="100" viewBox="0 0 300 150">
+        <svg class="header__logo" width="150" height="100" viewBox="0 0 300 150">
           <g>
             <circle r="25" cx="15%" cy="48%" fill="white" />
             <text x="24%" y="60%" fill="white" font-size="72" font-weight="bold">ne</text>
@@ -27,34 +27,33 @@
             <text x="60%" y="80%" fill="white" font-size="35" font-weight="normal">agency</text>
           </g>
         </svg>
-        <ul class="menu-items">
-          <li class="menu-item menu-icon">
+        <ul class="menu__items">
+          <li class="menu__item menu-icon">
             <i class="material-icons">
               menu
             </i>
           </li>
-          <li class="menu-item"><a href="#key-service">Сервисы</a></li>
-          <li class="menu-item"><a href="#portfolio">Портфолио</a></li>
-          <li class="menu-item">Кейсы</li>
-          <li class="menu-item"><a href="#about">О нас</a></li>
-          <li class="menu-item">Работа</li>
-          <li class="menu-item highlighted"><a href="#contacts">Контакты</a></li>
+          <li class="menu__item"><a href="#key-service">Сервисы</a></li>
+          <li class="menu__item"><a href="#portfolio">Портфолио</a></li>
+          <li class="menu__item">Кейсы</li>
+          <li class="menu__item"><a href="#about">О нас</a></li>
+          <li class="menu__item">Работа</li>
+          <li class="menu__item _highlighted"><a href="#contacts">Контакты</a></li>
         </ul>
       </nav>
-      <h1 class="header-text">
+      <h1 class="header__text">
         Digital <br> transformation <br> Agency
       </h1>
     </div>
   </header>
   <main class="content layout-center">
     <div class="content__flex">
-
       <section class="content__services">
-        <h2 class="services__title" id="key-service">Ключевые сервисы</h2>
+        <h2 class="services__title title" id="key-service">Ключевые сервисы</h2>
         <div class="key-service">
           <div class="key-service-item">
             <i class="material-icons">
-              devices
+              dashboard
             </i>
             Адаптивная верстка
           </div>
@@ -72,9 +71,21 @@
           </div>
           <div class="key-service-item">
             <i class="material-icons">
-              emoji_objects
+              devices
             </i>
             Разработка приложений
+          </div>
+          <div class="key-service-item">
+            <i class="material-icons">
+              shopping_cart
+            </i>
+            E-commerce
+          </div>
+          <div class="key-service-item">
+            <i class="material-icons">
+              trending_up
+            </i>
+            Внедрение CRM
           </div>
         </div>
       </section>
@@ -84,7 +95,7 @@
           <i class="material-icons submit-form__icon">
             laptop_mac
           </i>
-          <h2 class="feedback__title">Начнем ваш проект!</h2>
+          <h2 class="feedback__title title">Начнем ваш проект!</h2>
           <p class="feedback__content">Мы ответим в течение 2 часов!</p>
         </div>
         <input type="name" class="submit-form__name submit-form__item" id="name" placeholder="ФИО">
@@ -92,15 +103,15 @@
         <input type="tel" class="submit-form__phone-number submit-form__item" placeholder="Номер телефона"
           id="phoneNumber" pattern="+7-[0-9]{3}-[0-9]{7}">
         <div class="submit-form__feedback">
-          <input type="submit" class="submit-form__submit" value="Отправить">
+          <button class="submit-form__button">Отправить</button>
         </div>
       </aside>
     </div>
 
     <div class="content__portfolio" id="portfolio">
-      <h2 class="content__portfolio_title">Портфолио</h2>
+      <h2 class="portfolio__title title">Портфолио</h2>
       <div class="content__portfolio-box">
-        <div class="content__portfolio-box-item">
+        <!-- <div class="content__portfolio-box-item">
           <img src="#">
           <p>Project 1</p>
           <p>First project's description</p>
@@ -114,28 +125,60 @@
           <img src="#">
           <p>Project 3</p>
           <p>Third project's description</p>
-        </div>
+        </div> -->
+        <h3>Проект 1</h3>
+        <ul class="grid">
+          <li>
+            <img src="https://picsum.photos/300/210/?image=100"
+              data-gallery-src="https://picsum.photos/1200/840/?image=100" data-gallery-desc="Image 1" alt="Image 1">
+          </li>
+          <li>
+            <img src="https://picsum.photos/150/100/?image=200"
+              data-gallery-src="https://picsum.photos/1200/840/?image=200" data-gallery-desc="Image 2" alt="Image 2">
+          </li>
+          <li>
+            <img src="https://picsum.photos/150/100/?image=3" data-gallery-src="https://picsum.photos/1200/840/?image=3"
+              data-gallery-desc="Image 3" alt="Image 3">
+          </li>
+        </ul>
+
+        <h3>Проект 2</h3>
+        <ul class="grid">
+          <li>
+            <img src="https://picsum.photos/300/210/?image=101"
+              data-gallery-src="https://picsum.photos/1200/840/?image=101" data-gallery-desc="Image 1"
+              data-gallery-id="second gallery" alt="Image 1">
+          </li>
+          <li>
+            <img src="https://picsum.photos/150/100/?image=201"
+              data-gallery-src="https://picsum.photos/1200/840/?image=201" data-gallery-desc="Image 2"
+              data-gallery-id="second gallery" alt="Image 2">
+          </li>
+          <li>
+            <img src="https://picsum.photos/150/100/?image=4" data-gallery-src="https://picsum.photos/1200/840/?image=4"
+              data-gallery-desc="Image 3" data-gallery-id="second gallery" alt="Image 3">
+          </li>
+        </ul>
       </div>
 
       <div id="about" class="content__about-us">
-        <h2 class="content__about-us_title">О нас</h2>
-        <p>
-          Мы разрабатываем продукты и digital-экосистемы, 
-          создаем крутые веб-приложения, вдохновляющий UX-дизайн, 
-          осуществляем комплексную поддержку в режиме 24/7, 
-          разрабатываем стратегии (консалтинг в digital), 
-          проводим исследования и аудиты, ищем инсайты и занимаемся data-science.
+        <h2 class="about-us__title title">О нас</h2>
+        <p class="about-us__text">
+          Мы создаем цифровые продукты, информационные системы, 
+          строим мобильные и web приложения, разарбатываем дизайн на любой вкус!
+          Наша команда всегда готова к работе, автоматизация бизнес-процессов 
+          или ведение проектов, создание экосистемы продуктов и решений, 
+          SEO продвижение и многое другое - мы всегда к вашим услугам.
         </p>
       </div>
 
       <div id="contacts" class="content__contacts">
-        <h2 class="content__about-us_title">Контакты</h2>
-        <!--<div class="content__about-us_contact-info">-->
-        <div class="_shadow">
+        <h2 class="title">Контакты</h2>
+        <div class="contacts__items">
           <p><i class="material-icons" style="vertical-align:middle;">call</i>
-            +7-777-777-77-77 </p>
-          <p><i class="material-icons" style="vertical-align:middle;"> alternate_email</i>
-            onewebagency@email.com</p>
+            +7 (925) 071-69-23 </p>
+          <p><i class="material-icons" style="vertical-align:middle;">email</i>
+            dmity.glazov@oneweb.agency</p>
         </div>
       </div>
   </main>
@@ -156,4 +199,5 @@
   </footer>
 </body>
 <script type="text/javascript" src="js/index.js"></script>
+
 </html>

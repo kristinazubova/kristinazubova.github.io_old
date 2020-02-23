@@ -9,7 +9,7 @@
 
 /* TABLETS PORTRAIT */
 /*@media only screen and (min-width: 768px) and (max-width: 991px)*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .layout-center {
     margin: 0 5%;
   }
@@ -79,6 +79,13 @@
   }
 
   .submit-form {
+    max-width: unset;
+    width: calc(100% - 2rem);
+    margin-top: -2rem;
+  }
+
+  .submit-form {
+    max-width: unset;
     width: calc(100% - 2rem);
     margin-top: -2rem;
   }
@@ -88,12 +95,18 @@
     line-height: 3.5rem;
   }
 
-  .about-us__text {
+  .about-us__text,
+  .contacts__items {
     line-height: 1.6rem;
     font-size: 1.2rem;
   }
 }
 
 /* TABLET LANDSCAPE / DESKTOP */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1400px) {
+  .layout-center {
+    margin: 0 20%;
+  }
+
+  
 }

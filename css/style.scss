@@ -78,7 +78,7 @@
 
   /* Services */
   .content__services {
-    width: 40%;
+    width: 45%;
   }
 
   // .services__title {
@@ -87,7 +87,7 @@
 
   /* Submit form */
   .submit-form {
-    width: 22rem;
+    max-width: 26rem;
     padding: 1rem;
     margin-top: -7rem;
     border-radius: 0.2rem;
@@ -192,7 +192,10 @@
   /* Contacts */
   .contacts__items {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    margin: 3rem 0;
+    padding: 2rem 1rem;
     font-size: 1.6rem;
   }
 

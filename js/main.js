@@ -31,5 +31,5 @@ function toggleMenu(event) {
 function isMobileDevice() {
   return (typeof window.orientation !== "undefined") 
     || (navigator.userAgent.indexOf('IEMobile') !== -1)
-    || (window.innerWidth <= 768)
+    || (window.innerWidth <= 800)
 }

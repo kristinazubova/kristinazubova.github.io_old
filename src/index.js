@@ -5,11 +5,11 @@
 /**
  * Import scss files
  */
-import './../css/base.scss'
-import './../css/style.scss'
-import './../css/media.scss'
+import './css/base.scss'
+import './css/style.scss'
+import './css/media.scss'
 
 /**
  * Import js files
  */
-import './main'
+import './js/main'

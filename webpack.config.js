@@ -27,7 +27,7 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: __dirname + "/index.html",
+      template: __dirname + "/src/index.html",
       inject: 'body'
     })
   ],

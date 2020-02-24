@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // Require  html-webpack-plugin plugin
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: __dirname + "/js/index.js", // webpack entry point. Module to start building dependency graph
@@ -19,13 +20,13 @@ module.exports = {
       },
       {
         test: /\.(sass|scss)$/,
-        use: [{
-            loader: "style-loader" // creates style nodes from JS strings
-          }, {
-            loader: "css-loader" // translates CSS into CommonJS
-          }, {
-            loader: "sass-loader" // compiles Sass to CSS
-          }
+        use: [
+          // fallback to style-loader in development
+          process.env.NODE_ENV !== 'production'
+            ? 'style-loader'
+            : MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader',
         ]
       }
     ]
@@ -35,6 +36,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: __dirname + "/index.html",
       inject: 'body'
+    }),
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // both options are optional
+      filename: '[name].css',
+      chunkFilename: '[id].css',
     })
   ],
   devServer: {  // configuration for webpack-dev-server

@@ -1,15 +1,9 @@
-
 /* SMARTPHONES PORTRAIT */
 @media only screen and (min-width: 320px) and (max-width: 479px) {
 }
 
 /* SMARTPHONES LANDSCAPE */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-}
-
-/* TABLETS PORTRAIT */
-/*@media only screen and (min-width: 768px) and (max-width: 991px)*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 767px) {
   .layout-center {
     margin: 0 5%;
   }
@@ -105,11 +99,28 @@
   }
 }
 
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) and (max-width: 1128px) {
+  .layout-center {
+    margin: 0 5%;
+  }
+
+  .title {
+    font-size: x-large;
+  }
+
+  .key-service-item {
+    width: 90%;
+  }
+
+  .key-service-item .material-icons {
+    font-size: 2rem;
+  }
+}
+
 /* TABLET LANDSCAPE / DESKTOP */
 @media only screen and (min-width: 1400px) {
   .layout-center {
-    margin: 0 20%;
+    margin: 0 18%;
   }
-
-  
 }

@@ -3,6 +3,11 @@
  */
 
 /**
+ * import css files
+ */
+// import './css/fonts.css'
+
+/**
  * Import scss files
  */
 import './css/base.scss'

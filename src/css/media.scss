@@ -119,8 +119,14 @@
 }
 
 /* TABLET LANDSCAPE / DESKTOP */
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1500px) {
   .layout-center {
     margin: 0 18%;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .layout-center {
+    margin: 0 24%;
   }
 }

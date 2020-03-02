@@ -1,5 +1,10 @@
+@font-face {
+  font-family: "SpaceGrotesk";
+  // src: url("./../fonts/SF-Pro-Text-Regular.otf") format("otf");
+}
+
 * {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "SpaceGrotesk", Arial, sans-serif;
 }
 
 body {

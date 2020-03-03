@@ -155,7 +155,6 @@
 }
 
 /*Portfolio*/
-
 .content__portfolio {
   width: 100%;
 }
@@ -165,18 +164,20 @@
 
 .content__portfolio-box {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.content__portfolio-box-item {
-  height: 15rem;
+.portfolio-box__item {
+  width: 30%;
   background-color: white;
-  border: 1px solid #696969;
-  margin: 1rem;
-  padding: 1rem;
+  // border: 1px solid #696969;
   vertical-align: middle;
   text-align: center;
+}
+
+.portfolio-box__item img {
+  width: 100%;
 }
 
 /*About us*/

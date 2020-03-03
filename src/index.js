@@ -13,7 +13,6 @@
 import './css/base.scss'
 import './css/style.scss'
 import './css/media.scss'
-import './css/cube.scss'
 
 /**
  * Import js files

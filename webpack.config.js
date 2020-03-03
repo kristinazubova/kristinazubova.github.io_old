@@ -1,4 +1,4 @@
-// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
@@ -10,10 +10,6 @@ const config = {
   },
   module: {
     rules: [
-      {
-        test: /\.html$/i,
-        loader: 'html-loader',
-      },
       {
         test: /\.js$/,
         use: "babel-loader",
@@ -28,14 +24,10 @@ const config = {
         test: /\.(jpe?g|png|gif|svg)$/i,
         use: "file-loader"
       },
-      // {
-      //   test: /\.(png|svg|jpg|gif)$/,
-      //   use: ["file-loader"]
-      // },
-      // {
-      //   test: /\.(woff|woff2|eot|ttf|otf)$/,
-      //   use: ["file-loader"]
-      // }
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      }
     ]
   },
   plugins: [

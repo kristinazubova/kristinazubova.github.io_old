@@ -1,4 +1,4 @@
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
@@ -22,11 +22,14 @@ const config = {
       {
         //IMAGE LOADER
         test: /\.(jpe?g|png|gif|svg)$/i,
-        use: "file-loader"
+        loader: "file-loader",
+        options: {
+          esModule: false,
+        }
       },
       {
         test: /\.html$/i,
-        loader: 'html-loader',
+        loader: "html-loader"
       }
     ]
   },

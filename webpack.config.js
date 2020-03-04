@@ -39,6 +39,7 @@ const config = {
     ]
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: __dirname + "/src/index.html",
       inject: "body"

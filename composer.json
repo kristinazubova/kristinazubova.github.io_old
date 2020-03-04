@@ -1,0 +1,8 @@
+{
+  "name": "oneweb/page",
+  "type": "project",
+  "require": {},
+  "require-dev": {
+    "heroku/heroku-buildpack-php": "*"
+  }
+}

@@ -1,10 +1,10 @@
 @font-face {
   font-family: "SpaceGrotesk";
-  // src: url("./../fonts/SF-Pro-Text-Regular.otf") format("otf");
+  src: url("./../fonts/SpaceGrotesk-Regular.woff2") format("woff2");
 }
 
 * {
-  font-family: "SpaceGrotesk", Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 body {
@@ -18,6 +18,10 @@ a {
 
 a:hover {
   color: #ffb629;
+}
+
+._customFont {
+  font-family: SpaceGrotesk;
 }
 
 ._relative {

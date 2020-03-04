@@ -11,17 +11,11 @@
   <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link rel="icon" href="#" />
-
-  
-  <script src="https://www.amcharts.com/lib/4/core.js"></script>
-  <script src="https://www.amcharts.com/lib/4/charts.js"></script>
-  <script src="https://www.amcharts.com/lib/4/plugins/wordCloud.js"></script>
-  <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
 </head>
 
 <body>
   <header class="header _relative">
-    <div class="header__background-text">OneWeb</div>
+    <div class="header__background-text _customFont">OneWeb</div>
     <div class="layout-center _relative">
       <nav class="menu header-menu">
         <!-- <svg class="header__logo" width="150" height="100" viewBox="0 0 300 150">
@@ -43,14 +37,14 @@
           <li class="menu__item"><a href="#key-service">Сервисы</a></li>
           <li class="menu__item"><a href="#portfolio">Портфолио</a></li>
           <!-- <li class="menu__item">Кейсы</li> -->
-          <li class="menu__item"><a href="#stack">Технологии</a></li>
+          <li class="menu__item"><a href="#AbstractService">Услуги</a></li>
           <li class="menu__item"><a href="#about">О нас</a></li>
           <!-- <li class="menu__item">Работа</li> -->
           <!-- <li class="menu__item _highlighted"> -->
           <li class="menu__item"><a href="#contacts">Контакты</a></li>
         </ul>
       </nav>
-      <h1 class="header__text">
+      <h1 class="header__text _customFont">
         Digital <br />
         transformation <br />
         Agency
@@ -133,7 +127,14 @@
       </aside>
     </div>
 
-    <div class="content__portfolio" id="portfolio">
+    <div id="AbstractService">
+      <h2 class="stack__title title">Услуги</h2>
+      <p>
+
+      </p>
+    </div>
+
+    <div id="portfolio" class="content__portfolio">
       <h2 class="portfolio__title title">Портфолио</h2>
       <div class="portfolio__body">
         <div class="portfolio__project project-1 _shadow">
@@ -141,11 +142,11 @@
           <!-- <p>First project's description</p> -->
         </div>
         <div class="portfolio__project project-2 _shadow">
-          <span class="project__title">Проект 2</span>
+          <span class="project__title">Дизайн концепция</span>
           <!-- <p>Second project's description</p> -->
         </div>
         <div class="portfolio__project project-3 _shadow">
-          <span class="project__title">Проект 3</span>
+          <span class="project__title">Обновление сайта</span>
           <!-- <p>Third project's description</p> -->
         </div>
       </div>
@@ -184,10 +185,6 @@
               data-gallery-desc="Image 3" data-gallery-id="second gallery" alt="Image 3">
           </li>
         </ul>-->
-    </div>
-    <div id="stack">
-      <h2 class="stack__title title">Технологии</h2>
-      <div id="chartdiv"></div>
     </div>
     <div id="about" class="content__about-us">
       <h2 class="about-us__title title">О нас</h2>

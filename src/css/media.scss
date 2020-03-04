@@ -14,6 +14,7 @@
 
   .header-menu {
     height: initial;
+    margin-top: 2rem;
   }
 
   .header__text {
@@ -52,7 +53,6 @@
     align-items: center;
     text-align: right;
     background-color: unset;
-    height: 92px;
   }
 
   .menu_clicked .menu__item.menu-icon {
@@ -75,13 +75,7 @@
   .submit-form {
     max-width: unset;
     width: calc(100% - 2rem);
-    margin-top: -2rem;
-  }
-
-  .submit-form {
-    max-width: unset;
-    width: calc(100% - 2rem);
-    margin-top: -2rem;
+    margin-top: -3rem;
   }
 
   .key-service-item {

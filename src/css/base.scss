@@ -62,6 +62,15 @@ a:hover {
   margin: 0 10%;
 }
 
+.layout-flex {
+  display: flex;
+}
+
+.layout-two-row {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Base classes */
 .title {
   display: flex;

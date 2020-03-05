@@ -68,7 +68,7 @@
     flex-flow: column-reverse;
   }
 
-  .content__services {
+  .content__solutions {
     width: 100%;
   }
 
@@ -78,7 +78,7 @@
     margin-top: -3rem;
   }
 
-  .key-service-item {
+  .solutions-item {
     width: 95%;
     height: 3.5rem;
   }
@@ -108,11 +108,11 @@
     font-size: x-large;
   }
 
-  .key-service-item {
+  .solutions-item {
     width: 90%;
   }
 
-  .key-service-item .material-icons {
+  .solutions-item .material-icons {
     font-size: 2rem;
   }
 }

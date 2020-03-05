@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>One web agency - digital-агенство</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="OneWeb - digital transformation agency. Наши ключевые сервисы: разработка мобильных и web-приложений, 
+  адаптивная верстка, разработка и создание сайтов, проектирование интерфейсов."
+    />
+    <meta
+      name="keywords"
+      content="сайт, создание сайтов, web-site, верстка, приложение, автоматизация"
+    />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="#" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>One web agency - digital-агенство</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <meta name="description" content="OneWeb - digital transformation agency. Наши ключевые сервисы: разработка мобильных и web-приложений, 
-  адаптивная верстка, разработка и создание сайтов, проектирование интерфейсов." />
-  <meta name="keywords" content="сайт, создание сайтов, web-site, верстка, приложение, автоматизация" />
-  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link rel="icon" href="#" />
-</head>
-
-<body>
-  <header class="header _relative">
-    <div class="header__background-text _customFont">OneWeb</div>
-    <div class="layout-center _relative">
-      <nav class="menu header-menu">
-        <!-- <svg class="header__logo" width="150" height="100" viewBox="0 0 300 150">
+  <body>
+    <header class="header _relative">
+      <div class="header__background-text _customFont">OneWeb</div>
+      <div class="layout-center _relative">
+        <nav class="menu header-menu">
+          <!-- <svg class="header__logo" width="150" height="100" viewBox="0 0 300 150">
           <g>
             <circle r="25" cx="15%" cy="48%" fill="white" />
             <text x="24%" y="60%" fill="white" font-size="72" font-weight="bold">ne</text>
@@ -27,132 +38,180 @@
             <text x="60%" y="80%" fill="white" font-size="35" font-weight="normal">agency</text>
           </g>
         </svg> -->
-        <img src="./images/logo.svg" alt="Logo" class="header__logo" />
-        <ul class="menu__items">
-          <li class="menu__item menu-icon">
-            <i class="material-icons">
-              menu
-            </i>
-          </li>
-          <li class="menu__item"><a href="#key-service">Сервисы</a></li>
-          <li class="menu__item"><a href="#portfolio">Портфолио</a></li>
-          <!-- <li class="menu__item">Кейсы</li> -->
-          <li class="menu__item"><a href="#AbstractService">Услуги</a></li>
-          <li class="menu__item"><a href="#about">О нас</a></li>
-          <!-- <li class="menu__item">Работа</li> -->
-          <!-- <li class="menu__item _highlighted"> -->
-          <li class="menu__item"><a href="#contacts">Контакты</a></li>
-        </ul>
-      </nav>
-      <h1 class="header__text _customFont">
-        Digital <br />
-        transformation <br />
-        Agency
-      </h1>
-    </div>
-  </header>
-  <main class="content layout-center">
-    <div class="content__flex">
-      <section class="content__services">
-        <h2 class="services__title title" id="key-service">
-          Ключевые сервисы
-        </h2>
-        <div class="key-service">
-          <div class="key-service-item">
-            <i class="material-icons _text-gradient">
-              dashboard
-            </i>
-            Адаптивная верстка
-          </div>
-          <div class="key-service-item">
-            <i class="material-icons _text-gradient">
-              settings
-            </i>
-            Разработка проекта
-          </div>
-          <div class="key-service-item">
-            <i class="material-icons _text-gradient">
-              emoji_objects
-            </i>
-            Автоматизация бизнес-процессов
-          </div>
-          <div class="key-service-item">
-            <i class="material-icons _text-gradient">
-              devices
-            </i>
-            Разработка приложений
-          </div>
-          <div class="key-service-item">
-            <i class="material-icons _text-gradient">
-              shopping_cart
-            </i>
-            E-commerce
-          </div>
-          <div class="key-service-item">
-            <i class="material-icons _text-gradient">
-              trending_up
-            </i>
-            Внедрение CRM
-          </div>
-          <div class="key-service-item">
-            <i class="material-icons _text-gradient">
-              insert_chart_outlined
-            </i>
-            Аналитика и маркетинг
-          </div>
-          <div class="key-service-item">
-            <i class="material-icons _text-gradient">
-              http
-            </i>
-            Разработка API
-          </div>
-        </div>
-      </section>
-
-      <aside class="submit-form _shadow">
-        <div class="submit-form__feedback">
-          <i class="material-icons submit-form__icon _text-gradient">
-            laptop_mac
-          </i>
-          <h2 class="feedback__title title">Начнем ваш проект!</h2>
-          <p class="feedback__content">Мы ответим в течение 2 часов!</p>
-        </div>
-        <input type="name" class="submit-form__name submit-form__item" id="name" placeholder="ФИО" />
-        <input type="email" class="submit-form__email submit-form__item" id="email" placeholder="Email" />
-        <input type="tel" class="submit-form__phone-number submit-form__item" placeholder="Номер телефона"
-          id="phoneNumber" pattern="+7-[0-9]{3}-[0-9]{7}" />
-        <div class="submit-form__feedback">
-          <button class="submit-form__button">Отправить</button>
-        </div>
-      </aside>
-    </div>
-
-    <div id="AbstractService">
-      <h2 class="stack__title title">Услуги</h2>
-      <div>
-        <h3>Экспертиза</h3>
-        <h3>Продвижение</h3>
-        <h3>Разрботка</h3>
+          <img src="./images/logo.svg" alt="Logo" class="header__logo" />
+          <ul class="menu__items">
+            <li class="menu__item menu-icon">
+              <i class="material-icons">
+                menu
+              </i>
+            </li>
+            <li class="menu__item"><a href="#solutions">Сервисы</a></li>
+            <!-- <li class="menu__item">Кейсы</li> -->
+            <li class="menu__item"><a href="#Service">Услуги</a></li>
+            <li class="menu__item"><a href="#portfolio">Портфолио</a></li>
+            <li class="menu__item"><a href="#about">О нас</a></li>
+            <!-- <li class="menu__item">Работа</li> -->
+            <!-- <li class="menu__item _highlighted"> -->
+            <li class="menu__item"><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <h1 class="header__text _customFont">
+          Digital <br />
+          transformation <br />
+          Agency
+        </h1>
       </div>
-    </div>
+    </header>
+    <main class="content layout-center">
+      <div class="content__flex">
+        <section class="content__solutions">
+          <h2 class="solutions__title title" id="solutions">
+            Ключевые сервисы
+          </h2>
+          <div class="solutions">
+            <div class="solutions-item">
+              <!-- <i class="material-icons _text-gradient">
+                dashboard
+              </i> -->
+              <img src="./images/solution-icons/Adaptive.png" alt="adaptive icon" class="solution__icon icon">
+              Адаптивная верстка
+            </div>
+            <div class="solutions-item">
+              <!-- <i class="material-icons _text-gradient">
+                settings
+              </i> -->
+              <img src="./images/solution-icons/Settings.png" alt="adaptive icon" class="solution__icon icon">
+              Разработка проекта
+            </div>
+            <div class="solutions-item">
+              <!-- <i class="material-icons _text-gradient">
+                emoji_objects
+              </i> -->
+              <img src="./images/solution-icons/Custom-backend.png" alt="adaptive icon" class="solution__icon icon">
+              Автоматизация бизнес-процессов
+            </div>
+            <div class="solutions-item">
+              <!-- <i class="material-icons _text-gradient">
+                devices
+              </i> -->
+              <img src="./images/solution-icons/Customjs.png" alt="adaptive icon" class="solution__icon icon">
+              Разработка приложения
+            </div>
+            <div class="solutions-item">
+              <!-- <i class="material-icons _text-gradient">
+                shopping_cart
+              </i> -->
+              <img src="./images/solution-icons/ecommerce.png" alt="adaptive icon" class="solution__icon icon">
+              E-commerce
+            </div>
+            <div class="solutions-item">
+              <!-- <i class="material-icons _text-gradient">
+                trending_up
+              </i> -->
+              <img src="./images/solution-icons/Database.png" alt="adaptive icon" class="solution__icon icon">
+              Внедрение CRM
+            </div>
+            <div class="solutions-item">
+              <!-- <i class="material-icons _text-gradient">
+                insert_chart_outlined
+              </i> -->
+              <img src="./images/solution-icons/analytics.png" alt="adaptive icon" class="solution__icon icon">
+              Аналитика и маркетинг
+            </div>
+            <div class="solutions-item">
+              <!-- <i class="material-icons _text-gradient">
+                http
+              </i> -->
+              <img src="./images/solution-icons/api.png" alt="adaptive icon" class="solution__icon icon">
+              Разработка API
+            </div>
+          </div>
+        </section>
 
-    <div id="portfolio" class="content__portfolio">
-      <h2 class="portfolio__title title">Портфолио</h2>
-      <div class="portfolio__body">
-        <div class="portfolio__project project-1 _shadow">
-          <span class="project__title">Портал продаж</span>
-          <!-- <p>First project's description</p> -->
-        </div>
-        <div class="portfolio__project project-2 _shadow">
-          <span class="project__title">Дизайн концепция</span>
-          <!-- <p>Second project's description</p> -->
-        </div>
-        <div class="portfolio__project project-3 _shadow">
-          <span class="project__title">Обновление сайта</span>
-          <!-- <p>Third project's description</p> -->
+        <aside class="submit-form _shadow">
+          <div class="submit-form__feedback">
+            <!-- <i class="material-icons submit-form__icon _text-gradient">
+              laptop_mac
+            </i> -->
+            <img src="./images/solution-icons/rocket.png" alt="rocket" class="icon">
+            <h2 class="feedback__title title">Начнем ваш проект!</h2>
+            <p class="feedback__content">Мы ответим в течение 2 часов!</p>
+          </div>
+          <input
+            type="name"
+            class="submit-form__name submit-form__item"
+            id="name"
+            placeholder="ФИО"
+          />
+          <input
+            type="email"
+            class="submit-form__email submit-form__item"
+            id="email"
+            placeholder="Email"
+          />
+          <input
+            type="tel"
+            class="submit-form__phone-number submit-form__item"
+            placeholder="Номер телефона"
+            id="phoneNumber"
+            pattern="+7-[0-9]{3}-[0-9]{7}"
+          />
+          <div class="submit-form__feedback">
+            <button class="submit-form__button">Отправить</button>
+          </div>
+        </aside>
+      </div>
+
+      <div id="Service">
+        <h2 class="title">Услуги</h2>
+        <div class="layout-flex">
+          <div class="service__expertise">
+            <h3>Экспертиза</h3>
+            <p>
+              Наша команда обладает обширным набором услуг, которые помогут
+              повысить эффективность и расширить возможности вашей компании. Мы
+              работаем с вами, чтобы построить всеобъемлющие, продуманные и
+              целенаправленные процессы и результат. Давайте поговорим о том,
+              как наши услуги могут повысить эффективность вашей компании.
+            </p>
+          </div>
+          <div class="layout-two-row">
+            <div>
+              <h3>Продвижение</h3>
+              <div>
+                В условиях растущего конкурентного рынка и нестабильной
+                экономической ситуации подход к продвижению бизнеса в интернете
+                должен быть максимально персонализированным и гибким.
+              </div>
+            </div>
+            <div>
+              <h3>Разрботка</h3>
+              <div>
+                Наша команда готова глубоко понять ваши цели и потребности и
+                предоставить инфраструктуру для их реализации.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- <h3>Тестовый проект</h3>
+
+      <div id="portfolio" class="content__portfolio">
+        <h2 class="portfolio__title title">Портфолио</h2>
+        <div class="portfolio__body">
+          <div class="portfolio__project project-1 _shadow">
+            <span class="project__title">Портал продаж</span>
+            <!-- <p>First project's description</p> -->
+          </div>
+          <div class="portfolio__project project-2 _shadow">
+            <span class="project__title">Дизайн концепция</span>
+            <!-- <p>Second project's description</p> -->
+          </div>
+          <div class="portfolio__project project-3 _shadow">
+            <span class="project__title">Обновление сайта</span>
+            <!-- <p>Third project's description</p> -->
+          </div>
+        </div>
+        <!-- <h3>Тестовый проект</h3>
         <ul class="grid">
           <li>
             <img
@@ -187,41 +246,42 @@
               data-gallery-desc="Image 3" data-gallery-id="second gallery" alt="Image 3">
           </li>
         </ul>-->
-    </div>
-    <div id="about" class="content__about-us">
-      <h2 class="about-us__title title">О нас</h2>
-      <p class="about-us__text">
-        Мы создаем цифровые продукты, информационные системы, строим мобильные
-        и web приложения, разарбатываем дизайн на любой вкус! Наша команда
-        всегда готова к работе, автоматизация бизнес-процессов или ведение
-        проектов, создание экосистемы продуктов и решений, SEO продвижение и
-        многое другое - мы всегда к вашим услугам.
-      </p>
-    </div>
+      </div>
+      <div id="about" class="content__about-us">
+        <h2 class="about-us__title title">О нас</h2>
+        <p class="about-us__text">
+          Мы создаем цифровые продукты, информационные системы, строим мобильные
+          и web приложения, разарбатываем дизайн на любой вкус! Наша команда
+          всегда готова к работе, автоматизация бизнес-процессов или ведение
+          проектов, создание экосистемы продуктов и решений, SEO продвижение и
+          многое другое - мы всегда к вашим услугам.
+        </p>
+      </div>
 
-    <div id="contacts" class="content__contacts">
-      <h2 class="title">Контакты</h2>
-      <div class="contacts__items _highlighted">
-        <div class="contacs__item">
-          <i class="material-icons" style="vertical-align:middle;">email</i>
-          dmitry.glazov@oneweb.agency
-        </div>
-        <div class="contacs__item">
-          <i class="material-icons" style="vertical-align:middle;">call</i>
-          +7 (999) 999-99-99
+      <div id="contacts" class="content__contacts">
+        <h2 class="title">Контакты</h2>
+        <div class="contacts__items _highlighted">
+          <div class="contacs__item">
+            <i class="material-icons" style="vertical-align:middle;">email</i>
+            dmitry.glazov@oneweb.agency
+          </div>
+          <div class="contacs__item">
+            <i class="material-icons" style="vertical-align:middle;">call</i>
+            +7 (999) 999-99-99
+          </div>
         </div>
       </div>
-    </div>
-  </main>
-  <footer class="footer">
-    <div class="footer__content layout-center">
-      <img src="./images/logo.svg" alt="Logo" class="header__logo" />
-      <p class="footer__copyright">
-        <i class="material-icons" style="vertical-align: middle;">copyright</i>
-        2020, "One Web agency"
-      </p>
-    </div>
-  </footer>
-</body>
-
+    </main>
+    <footer class="footer">
+      <div class="footer__content layout-center">
+        <img src="./images/logo.svg" alt="Logo" class="header__logo" />
+        <p class="footer__copyright">
+          <i class="material-icons" style="vertical-align: middle;"
+            >copyright</i
+          >
+          2020, "One Web agency"
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

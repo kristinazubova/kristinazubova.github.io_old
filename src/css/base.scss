@@ -66,13 +66,17 @@ a:hover {
   display: flex;
 }
 
-.layout-two-row {
-  display: flex;
+._column {
   flex-direction: column;
-}
+} 
 
 /* Base classes */
 .title {
   display: flex;
   font-size: 2.2rem;
+}
+
+.text {
+  line-height: 2rem;
+  font-size: 1.5rem;
 }

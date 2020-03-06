@@ -225,8 +225,7 @@ $additionalColor: #ffb629;
 }
 
 .about-us__text {
-  line-height: 3rem;
-  font-size: 2rem;
+  
 }
 
 /* Contacts */
@@ -246,9 +245,8 @@ $additionalColor: #ffb629;
 /* Footer */
 .footer {
   width: 100%;
-  bottom: 0rem;
   vertical-align: bottom;
-  min-height: 4rem;
+  padding: 1rem 0;
   background-color: #ad181e;
 }
 

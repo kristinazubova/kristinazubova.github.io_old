@@ -12,6 +12,15 @@
     font-size: 1.5rem;
   }
 
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .text {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+
   .header-menu {
     height: initial;
     margin-top: 2rem;
@@ -19,6 +28,7 @@
 
   .header__text {
     margin-top: 2rem;
+    margin-bottom: 5rem;
     font-size: 3rem;
   }
 
@@ -107,12 +117,24 @@
     font-size: x-large;
   }
 
+  .subtitle {
+    font-size: larger;
+  }
+
+  .text {
+    font-size: medium;
+  }
+
+  .solutions {
+    height: calc(100% - 4rem);
+  }
+
   .solutions-item {
     width: 90%;
   }
 
-  .solutions-item .material-icons {
-    font-size: 2rem;
+  .solution__icon {
+    max-width: 25px;
   }
 }
 

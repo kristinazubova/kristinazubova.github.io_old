@@ -1,6 +1,6 @@
 $mainColor: #ad181e;
 $mainColorPair: #800000;
-$additionalColor: #ffb629; 
+$additionalColor: #ffb629;
 
 /* Header's style */
 .header {
@@ -23,6 +23,10 @@ $additionalColor: #ffb629;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header__logo {
+  z-index: 100;
 }
 
 .header-menu {
@@ -98,7 +102,7 @@ $additionalColor: #ffb629;
 
 .submit-form__item {
   border: none;
-  border-bottom: 1px solid rgb(53, 54, 55);//#696969;
+  border-bottom: 1px solid rgb(53, 54, 55);
   width: 90%;
   line-height: 2rem;
   background: none;
@@ -157,11 +161,66 @@ $additionalColor: #ffb629;
   max-width: 42px;
 }
 
-/* Services */
-.service__expertise {
-  align-self: center;
+.rocket-icon {
+  max-width: 60px;
 }
 
+/* Services */
+.service__expertise {
+  $border: 5px;
+
+  align-self: center;
+  margin: auto;
+  position: relative;
+  padding: 5%;
+  background: white;
+  background-clip: padding-box;
+  border: solid 5px transparent;
+  border-radius: 0.4rem;
+
+  // &:before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   z-index: -1;
+  //   margin: -$border;
+  //   border-radius: inherit;
+  //   background: lightgray;
+  //   border-radius: 0.2rem;
+  //   transition: all 0.3s ease-in-out;
+  // }
+
+  // &:hover:before {
+  //   transition: all 0.3s ease-in-out;
+  //   background: -webkit-linear-gradient(330deg, #ffb629 30%, #c41c21 80%);
+  // }
+}
+
+.service-small {
+  width: 50%;
+  padding: 5%;
+}
+
+.expertise__title {
+  margin-top: 0px;
+}
+
+.service__title {
+  position: relative;
+  // z-index: 10;
+}
+
+.service__number {
+  font-family: "SpaceGrotesk";
+  position: absolute;
+  font-size: 5rem;
+  color: $mainColor;
+  top: -3rem;
+  // z-index: 1;
+}
 
 /* Portfolio */
 .content__portfolio {
@@ -195,9 +254,8 @@ $additionalColor: #ffb629;
   background-color: $mainColor;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-weight: 700;
   font-size: 2rem;
-  color: white
+  color: white;
 }
 
 .project__img {
@@ -205,15 +263,15 @@ $additionalColor: #ffb629;
 }
 
 .project-1 {
-  background-image: url('./../images/Dolina.png');
+  background-image: url("./../images/Dolina.png");
 }
 
 .project-2 {
-  background-image: url('./../images/Hospital.png');
+  background-image: url("./../images/Hospital.png");
 }
 
 .project-3 {
-  background-image: url('./../images/stone.png');
+  background-image: url("./../images/stone.png");
 }
 
 /* About us */
@@ -225,7 +283,6 @@ $additionalColor: #ffb629;
 }
 
 .about-us__text {
-  
 }
 
 /* Contacts */

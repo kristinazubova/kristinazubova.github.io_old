@@ -172,7 +172,7 @@ $additionalColor: #ffb629;
   align-self: center;
   margin: auto;
   position: relative;
-  padding: 5%;
+  // padding: 0 5%;
   background: white;
   background-clip: padding-box;
   border: solid 5px transparent;
@@ -200,8 +200,8 @@ $additionalColor: #ffb629;
 }
 
 .service-small {
-  width: 50%;
-  padding: 5%;
+  width: 48%;
+  // padding: 0 5%;
 }
 
 .expertise__title {
@@ -209,17 +209,17 @@ $additionalColor: #ffb629;
 }
 
 .service__title {
-  position: relative;
-  // z-index: 10;
+  display: flex;
+  align-items: center;
 }
 
 .service__number {
-  font-family: "SpaceGrotesk";
-  position: absolute;
-  font-size: 5rem;
-  color: $mainColor;
-  top: -3rem;
-  // z-index: 1;
+  display: inline-block;
+  min-height: 1rem;
+  min-width: 1rem;
+  background-color: $mainColor;
+  margin-right: 1rem;
+  border-radius: 0.2rem;
 }
 
 /* Portfolio */

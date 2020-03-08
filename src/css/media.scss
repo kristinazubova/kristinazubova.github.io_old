@@ -8,6 +8,15 @@
     margin: 0 5%;
   }
 
+  // FIX IT PLS
+  .layout-flex {
+    flex-direction: column;
+  }
+
+  .service-small {
+    width: 100%;
+  }
+
   .title {
     font-size: 1.5rem;
   }
@@ -126,7 +135,7 @@
   }
 
   .solutions {
-    height: calc(100% - 4rem);
+    height: calc(100% - 5rem);
   }
 
   .solutions-item {

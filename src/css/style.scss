@@ -290,13 +290,40 @@ $additionalColor: #ffb629;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 3rem 0;
-  padding: 2rem 1rem;
-  font-size: 1.6rem;
+  margin-bottom: 2rem;
+
+  $border: 5px;
+
+  position: relative;
+  padding: 2rem 0;
+  background: white;
+  background-clip: padding-box;
+  border: solid 5px transparent;
+  border-radius: 0.4rem;
+  
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -$border;
+    border-radius: inherit;
+    background: linear-gradient(330deg, $mainColor 30%, $additionalColor 80%);;
+    border-radius: 0.2rem;
+  }
 }
 
 .contacs__item {
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.contacs__item .material-icons {
+  padding-right: 1rem;
 }
 
 /* Footer */
